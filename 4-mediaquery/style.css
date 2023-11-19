@@ -6,12 +6,25 @@ div{
 }
 
 
-/* 
-@media (min-width: 481px) {
+
+
+
+
+ @media (min-width: 480px) {
     div{
         background-color: blue;
+        font-size: 3rem;
+        color: #fff;
     }
-}
+} 
+
+/* @media (max-width: 480px) {
+    div{
+        background-color: blue;
+        font-size: 3rem;
+        color: #fff;
+    }
+} */
 
 
 @media (min-width: 769px) {
@@ -20,14 +33,19 @@ div{
     }
 }
 
+
+
+
 @media (min-width: 1025px) {
     div{
         background-color: rgb(115, 0, 128);
     }
 }
 
+
+
 @media (min-width: 1201px) {
     div{
         background-color: rgb(128, 0, 11);
     }
-}  */
+}  
