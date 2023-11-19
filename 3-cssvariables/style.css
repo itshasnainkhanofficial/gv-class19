@@ -1,0 +1,17 @@
+:root{
+    --blue: #1e90ff;
+    --div-radius: 1rem;
+    --div-padding: 0.5em 1em;
+}
+
+
+.wrapper{
+    display: flex;
+}
+
+.wrapper>div:first-child {
+    background-color: var(--blue);
+    border-radius: var(--div-radius);
+    padding: var(--div-padding);
+}
+

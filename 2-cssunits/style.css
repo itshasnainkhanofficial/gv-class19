@@ -1,0 +1,109 @@
+/* some resets just ignore*/
+
+*,
+*::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.wrapper {
+    margin-top: 10px;
+    background-color: antiquewhite;
+    display: flex;
+}
+
+.wrapper div{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: aqua;
+}
+
+button{
+    background-color: teal;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* see the difference how pixel and rem, em are behaving when changing default font size of the device */
+/* #div1{
+    font-size: 16px;
+}
+
+#div2{
+    font-size: 1rem;
+}
+
+#div3{
+    font-size: 1em;
+} */
+
+
+/* problem with em */
+
+/* 
+with refrence to parent
+1em = 16px
+2em = 16 x 2 = 32px
+3em = 16 x 3 = 48px
+4em = 16 x 4 = 64px 
+*/
+
+
+/* 32px*/
+/* #div1 button {
+    font-size: 2em; 
+} */
+
+/* 32px*/
+/* #div1 p{
+    font-size: 2em;
+} */
+
+
+
+/* solve problem with rem */
+/* 
+with refrence to root i.e html or root tag
+1rem = 16px
+2rem = 16 x 2 = 32px
+3rem = 16 x 3 = 48px
+4rem = 16 x 4 = 64px 
+*/
+/* 32px*/
+/* #div2 button {
+    font-size: 2rem; 
+} */
+
+/* 32px*/
+/* #div2 p{
+    font-size: 2rem;
+} */
+
+
+/* when to use what? */
+
+/* depends on your uscase */
+/* you can use em for margin and padding to make spacing consistance and rem for font sizes */
+
+
+/* when using em with margin or padding, it don't refrence parent instead current font size */
+
+/* 32 x 1 = 32 , so padding horizontal 32px */
+#div1 button{
+    font-size: 32px;
+    padding: 0.5em 1em;
+    margin-left: 1em;
+}
+
+/* 16 x 1 = 16 , so padding horizontal 16px as per root element size */
+#div2 button{
+    font-size: 32px;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+}
+
+/* read following for 62.5% trick */
+/* https://www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/ */
