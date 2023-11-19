@@ -1,6 +1,6 @@
 /* some resets just ignore*/
 
-*,
+/* *,
 *::before, *::after {
     box-sizing: border-box;
     padding: 0;
@@ -25,7 +25,7 @@ button{
     background-color: teal;
     color: #fff;
     margin-top: 10px;
-}
+} */
 
 /* see the difference how pixel and rem, em are behaving when changing default font size of the device */
 /* #div1{
@@ -92,18 +92,18 @@ with refrence to root i.e html or root tag
 /* when using em with margin or padding, it don't refrence parent instead current font size */
 
 /* 32 x 1 = 32 , so padding horizontal 32px */
-#div1 button{
+/* #div1 button{
     font-size: 32px;
     padding: 0.5em 1em;
     margin-left: 1em;
-}
+} */
 
 /* 16 x 1 = 16 , so padding horizontal 16px as per root element size */
-#div2 button{
+/* #div2 button{
     font-size: 32px;
     padding: 0.5rem 1rem;
     margin-left: 1rem;
-}
+} */
 
 /* read following for 62.5% trick */
 /* https://www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/ */
