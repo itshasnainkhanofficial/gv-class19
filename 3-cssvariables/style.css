@@ -1,10 +1,11 @@
 :root{
     --blue: #1e90ff;
+    --white: #edebeb;
     --div-radius: 1rem;
     --div-padding: 0.5em 1em;
 }
 
-
+ 
 .wrapper{
     display: flex;
 }
@@ -13,5 +14,13 @@
     background-color: var(--blue);
     border-radius: var(--div-radius);
     padding: var(--div-padding);
+}
+
+
+p {
+    background-color: var(--blue);
+    border-radius: var(--div-radius);
+    padding: var(--div-padding);
+    color: var(--white)
 }
 

@@ -1,0 +1,33 @@
+
+
+div{
+    background-color: red;
+    font-size: 2rem;
+}
+
+
+/* 
+@media (min-width: 481px) {
+    div{
+        background-color: blue;
+    }
+}
+
+
+@media (min-width: 769px) {
+    div{
+        background-color: green;
+    }
+}
+
+@media (min-width: 1025px) {
+    div{
+        background-color: rgb(115, 0, 128);
+    }
+}
+
+@media (min-width: 1201px) {
+    div{
+        background-color: rgb(128, 0, 11);
+    }
+}  */
