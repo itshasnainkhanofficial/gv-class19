@@ -1,7 +1,6 @@
 /* some resets just ignore*/
 
-/* *,
-*::before, *::after {
+*, *::before, *::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -14,6 +13,7 @@
     display: flex;
 }
 
+
 .wrapper div{
     margin-left: 10px;
     margin-right: 10px;
@@ -21,14 +21,24 @@
     background-color: aqua;
 }
 
+
+
 button{
     background-color: teal;
     color: #fff;
     margin-top: 10px;
-} */
+} 
 
 /* see the difference how pixel and rem, em are behaving when changing default font size of the device */
-/* #div1{
+
+/* 16px = 1rem = 1em  */
+
+/* 1kg == 1000g */
+/* 1km == 1000m */
+
+
+/* 1rem = 16px */
+ /* #div1{
     font-size: 16px;
 }
 
@@ -38,13 +48,14 @@ button{
 
 #div3{
     font-size: 1em;
-} */
+}  */
 
 
 /* problem with em */
 
 /* 
-with refrence to parent
+em with refrence to parent
+rem with refrence to root (html)
 1em = 16px
 2em = 16 x 2 = 32px
 3em = 16 x 3 = 48px
@@ -53,15 +64,18 @@ with refrence to parent
 
 
 /* 32px*/
+/* 32 x 2 = 64 */
 /* #div1 button {
     font-size: 2em; 
 } */
 
+
+/* 16 x 2 = 32 */
 /* 32px*/
+
 /* #div1 p{
     font-size: 2em;
 } */
-
 
 
 /* solve problem with rem */
@@ -72,17 +86,23 @@ with refrence to root i.e html or root tag
 3rem = 16 x 3 = 48px
 4rem = 16 x 4 = 64px 
 */
+
+
 /* 32px*/
+/* 16px x 2 = 32px */
 /* #div2 button {
     font-size: 2rem; 
 } */
 
 /* 32px*/
+/* 16px x 2 = 32px */
 /* #div2 p{
     font-size: 2rem;
+}
+
+#div2{
+    font-size: 2rem;
 } */
-
-
 /* when to use what? */
 
 /* depends on your uscase */
@@ -92,18 +112,24 @@ with refrence to root i.e html or root tag
 /* when using em with margin or padding, it don't refrence parent instead current font size */
 
 /* 32 x 1 = 32 , so padding horizontal 32px */
-/* #div1 button{
+#div1 button{
     font-size: 32px;
     padding: 0.5em 1em;
     margin-left: 1em;
-} */
+}
+
+#div1{
+    font-size: 2em;
+}
 
 /* 16 x 1 = 16 , so padding horizontal 16px as per root element size */
-/* #div2 button{
+#div2 button{
     font-size: 32px;
     padding: 0.5rem 1rem;
     margin-left: 1rem;
-} */
+}
+
 
 /* read following for 62.5% trick */
+/* why give 62.5% to html or root tag */
 /* https://www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/ */
